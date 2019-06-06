@@ -60,7 +60,7 @@ export default {
   },
   created() {
     if (this.$ls.get("favoriteCities")) {
-      this.favorites = this.get("favoriteCities");
+      this.favorites = this.$ls.get("favoriteCities");
     }
   },
   methods: {
